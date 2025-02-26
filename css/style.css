@@ -1,0 +1,52 @@
+/* para bajar el footer hay que hacer esto en BODY Y MAIN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face{
+font-family: "Sigmar";
+src: url("../Fonts/Sigmar-Regular.ttf");
+}
+/* Esto es para agregar fuentes de google descargandolas */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  }
+
+  main{
+    flex-grow: 1;
+  }
+/* el flex grow hace crecer un item hijo, el espacio que me sobra en el body, el main toma ese lugar */
+
+.marca{
+  font-family: "Sigmar", sans-serif;
+}
+
+.img-carousel-crypto{
+  height: 300px;
+  object-fit: cover;
+}
+/* para cambiar de color las flechas del carousel */
+.carousel-control-prev-icon{
+  filter: none !important;
+}
+
+.carousel-control-next-icon{
+  filter: none !important;
+}
+
+
+/* media para la tablet */
+@media (min-width:768px) and (max-width:991px){
+  .img-carousel-crypto{
+    height: 350px;
+  }
+}
+/* media para dispositivos LG */
+@media (min-width:992px){
+  .img-carousel-crypto{
+    height: 500px;
+    object-position: 100% 40%;
+    /* para mover la imagen en los ejes y quede centrada */
+  }
+}
