@@ -193,27 +193,69 @@
         <p>Completá los siguientes datos para crear una cuenta</p>
         <form>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
+            <label for="nombre" class="form-label">Nombre y Apellido *</label>
+            <input type="nombre" class="form-control" id="nombre" aria-describedby="nombreHelp" required id="nombre" minlength="10" maxlength="40">
+            </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required id="email" minlength="10" maxlength="50">
+            </div>
+          <div class="mb-3">
+            <label for="contraseña" class="form-label">Contraseña *</label>
+            <input type="password" class="form-control" id="contraseña" required id="contraseña" minlength="6">
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="mb-3">
+            <label for="confirmcontraseña" class="form-label">Repetir Contraseña *</label>
+            <input type="password" class="form-control" id="confirmcontraseña" required>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
       </div>
     </div>
   </div>
 </div>
+<section class="container">
+<div class="row">
+  <article class="col-12 col-md-6 col-lg-4 mb-3">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <i class="bi bi-hand-thumbs-up fs-1 text-danger"></i>
+        <h5 class="card-title">Biometría</h5>
+        <p class="card-text">Nuestra tecnología te permita acceder a tu cuenta usando tu huella digital o tu cara</p>
+      </div>
+    </div>
+  </article>
+  <article class="col-12 col-md-6 col-lg-4 mb-3">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <i class="bi bi-hand-thumbs-up fs-1 text-danger"></i>
+        <h5 class="card-title">Segundo Factor</h5>
+        <p class="card-text">Usamos un token invisible para todas las operaciones que hagas</p>
+      </div>
+    </div>
+  </article>
+  <article class="col-12 col-md-6 col-lg-4 mb-3">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <i class="bi bi-hand-thumbs-up fs-1 text-danger"></i>
+        <h5 class="card-title">Personal</h5>
+        <p class="card-text">Vas a poder ingresar desde un dispositivo a la vez a tu cuenta</p>
+      </div>
+    </div>
+  </article>
+  <article class="col-12 col-md-6 col-lg-4 mb-3">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <i class="bi bi-hand-thumbs-up fs-1 text-danger"></i>
+        <h5 class="card-title">100% encriptado</h5>
+        <p class="card-text">Todas las transacciones son encriptadas para tu mayor seguridad</p>
+      </div>
+    </div>
+  </article>
+</div>
+</section>
     <footer class="bg-dark-subtle py-3">
       <div class="container">
         <div class="d-flex gap-3 justify-content-center justify-content-md-start">
