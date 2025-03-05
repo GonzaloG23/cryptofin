@@ -35,7 +35,9 @@ body {
   filter: none !important;
 }
 
-
+.panel{
+  width: 100px;
+}
 /* media para la tablet */
 @media (min-width:768px) and (max-width:991px){
   .img-carousel-crypto{
