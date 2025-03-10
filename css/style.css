@@ -38,6 +38,12 @@ body {
 .panel{
   width: 100px;
 }
+
+.login{
+  border-radius: 30px;
+}
+
+
 /* media para la tablet */
 @media (min-width:768px) and (max-width:991px){
   .img-carousel-crypto{
